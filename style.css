@@ -1,0 +1,393 @@
+/* nombre de los colores: http://www.colors.commutercreative.com/grid/ */
+/* crear colores con rgb(https://color.adobe.com/create/color-wheel/) */
+/* para buscar fuentes: https://fonts.google.com/?category=Serif,Sans+Serif */
+
+/* http://ianlunn.github.io/Hover/- agregar efectos a los menus*/
+/**/
+* {
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    /*border-style: solid;*/
+
+  }
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor {
+    width: 100%;
+    height: 100%;
+}
+.intro {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: url(image/background.jpg) no-repeat center center;
+    display: table;
+    top: 0;
+    background-size: cover;
+}
+
+/* bar nav */
+
+
+.nav ul {
+    /*display: table;*/
+    background-color: rgba(24, 24, 27, 0.56);
+    overflow: hidden;
+    color: whitesmoke;
+    padding: 0;
+    text-align: right;
+    width: 100%;
+    margin: 0;
+    font-size: 1em;
+    transition: max-height 0.5s;
+    position: fixed;
+    
+  }
+.nav ul li {
+    display:inline-block;
+    padding: 1em;
+   
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.nav ul li:hover {
+	background-color: #399077;
+}
+
+.menu-icon {
+    width: 100%;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 0.9em 0.6em;
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: rgba(24, 24, 27, 0.70);
+    display: none;
+    position: fixed;
+    
+    
+}
+
+
+.info-principal {
+    display: table;
+    top: 0px;
+   width: 100%;
+    height: 100%;
+    
+    
+    
+}
+
+.align-prin {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+       
+    
+}
+
+.info-principal img {
+    border-radius: 100%;
+    width: 14em;
+    height: 14em;
+    
+}
+.presentacion {
+    display: table;
+    height: 30%;
+    width: 100%;
+    padding-left:  10%;
+    padding-right: 10%;
+    color: rgb(31, 38, 38);
+    background-color: rgb(237, 237, 239);
+}
+
+.align {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    
+}
+
+.selectorcontainer {
+    width: 100%;
+    height: 30%;
+    display: table;
+    background-color: rgb(237, 237, 239);
+}
+
+.alignselectos {
+   display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.selectorex, .selectoredu, .selectorcur {
+    width: 15%;
+    height: 80%;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 4% 0;
+    color: whitesmoke;
+    background-color: rgb(89, 88,89);
+    transition: 0.5deg;
+    cursor: pointer;
+    
+}
+
+.selectorex:hover, .selectoredu:hover, .selectorcur:hover {
+    background-color: rgb(42, 92, 166);    
+}
+
+
+
+.experiencia {
+    width: 100%;
+    display: table;
+    box-sizing: border-box;
+    padding: 3% 10%;
+    background-color: rgb(89, 88,89);
+    color: whitesmoke;
+    display: none;
+    transition: 0.5deg;
+    
+    
+ }
+
+
+.educacion {
+    width: 100%;
+    display:table;
+    box-sizing: border-box;
+    padding: 3% 10%;
+    background-color: rgb(89, 88,89);
+    color: whitesmoke;
+    display: none;
+ }
+/* cursos */
+
+
+.cursos {
+    width: 100%;
+    display: table;
+    box-sizing: border-box;
+    padding: 3% 10%;
+    background-color: rgb(89, 88,89);
+    color: whitesmoke;
+    display: none;
+ }
+
+.excontainer, .educontainer, .curcontainer {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.idiomas {
+    display: table;
+    top: 0px;
+    width: 100%;
+    height: 80%;
+    background-size: cover;
+    background: url(image/idiomas.jpg) no-repeat center center;
+    color: rgb(24, 24, 27);
+    
+    
+}
+
+
+.container2 {
+    height: auto;
+     display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    
+    
+    
+}
+.idiomas h3 {
+     text-align: center;
+
+}
+
+.boxes {
+ 
+    text-align: center;
+   
+}
+
+.box1, .box2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+    height: 10em;
+    border: 0.5em solid rgb(24, 24, 27);
+    display: inline-block;
+    border-radius: 50%;
+    
+    transition: .5s;
+}
+
+.box3 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+    height: 10em;
+    border: 0.5em solid rgb(24, 24, 27);
+    display: inline-block;
+    transform: rotate(-45deg);
+    border-radius: 50%;
+    transition: .5s;
+    
+    
+}
+.box3 p, .box1 p, .box2 p {
+    margin-top: 3em;
+    font-size: 1em;
+    
+}
+.box3 p {
+transform: rotate(45deg);
+}
+
+.box1:hover {
+    border-top: 0.5em solid rgb(42, 92, 166);
+    border-right: 0.5em solid rgb(42, 92, 166);
+    border-bottom: 0.5em solid rgb(42, 92, 166);
+    border-left:  0.5em solid rgb(42, 92, 166);
+    
+}
+
+.box2:hover {
+    border-top: 0.5em solid rgb(42, 92, 166);
+    border-right: 0.5em solid rgb(42, 92, 166);
+    border-bottom: 0.5em solid rgb(42, 92, 166);
+    border-left:  0.5em solid rgb(42, 92, 166);
+}
+
+.box3:hover {
+    
+    border-right: 0.5em solid rgb(42, 92, 166);
+    border-bottom: 0.5em solid rgb(42, 92, 166);
+    border-left: 0.5em solid rgb(42, 92, 166);
+}
+
+.footer {
+    display: table;
+    color: rgb(31, 38, 38);
+    height: 20%;
+    width: 100%;
+    background-color: rgb(237, 237, 239);
+    
+}
+.footerbox {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+.footer h3 {
+
+    width: 100%;
+    
+   
+}
+.linkedin-icon {
+    
+    width: 3%;
+    cursor: pointer;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .5s;
+   
+ }
+.linkedin-icon a:link {
+    
+    color: rgb(31, 38, 38);
+}
+.linkedin-icon a:visited {
+    
+    color: rgb(31, 38, 38);
+} 
+
+
+.linkedin-icon a:active {
+    
+    color: rgb(31, 38, 38)
+} 
+
+.linkedin-icon a:hover {
+    color: #399077;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .nav ul {
+       display: none;
+    }
+    
+    .showing {
+        display: block;
+    }
+    
+    
+    .nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px;
+        text-align: left;
+    }
+    
+   
+    .menu-icon {
+       display: block;
+        }
+
+    .selectorex {
+        width: 100%;
+        padding: 0;
+        height: 25%;
+        margin: 1% 0;
+        
+    }
+    .selectoredu {
+        width: 100%;
+        padding: 0;
+        height: 25%;
+        margin: 1% 0;
+    }
+
+    .selectorcur {
+        width: 100%;
+        padding: 0;
+        height: 25%;
+        margin: 1% 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+    background-color: rgb(237, 237, 239)
+    }
+    .contenedor {
+    width: 80%;
+    margin: 0 auto;
+    }
+    
+    .nav ul {
+        margin-left: -10%;
+    }
+}
+        /* breakpoints comunes: https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/screen-sizes.png */
