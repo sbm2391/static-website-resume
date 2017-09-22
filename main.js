@@ -16,16 +16,16 @@ button.addEventListener("click", displayToggle, bool);
 
 var btn = document.getElementById("btn");
 var menu = document.getElementById("mininav");
-var bool = true;
 
-function displaymenu() {
+
+function displayMenu() {
     if (bool) {
-        menu.setAttribute("class", "nav ul showing")
+        menu.setAttribute("class", "navi showing")
         bool = false;
     } else {
-        menu.setAttribute("class", "menuhide")
+        menu.setAttribute("class", "hidding")
         bool = true;
     }
 }
 
-button.addEventListener("click", displayToggle, bool);
+btn.addEventListener("click", displayMenu, bool);
