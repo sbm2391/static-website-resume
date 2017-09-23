@@ -154,16 +154,32 @@ html, body {
     background-color: rgb(89, 88,89);
 }
 
+/* experiencia */
+
+.boxex {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(237, 237, 239);
+    padding: 0 10%;
+}
+
 .experiencia {
 
     width: 100%;
     box-sizing: border-box;
-    padding: 3% 10%;
+    padding: 2% 5%;
     background-color: rgb(89, 88,89);
     color: whitesmoke;
     transition: 0.5deg;
     border: 0.5em solid rgb(42, 92, 166);
     display: none;
+}
+/* educacion*/
+.boxedu {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(237, 237, 239);
+    padding: 0 10%;
 }
 
 
@@ -171,7 +187,7 @@ html, body {
     width: 100%;
     display:table;
     box-sizing: border-box;
-    padding: 3% 10%;
+    padding: 2% 5%;
     background-color: rgb(89, 88,89);
     color: whitesmoke;
     border: 0.5em solid rgb(42, 92, 166);
@@ -179,12 +195,18 @@ html, body {
  }
 /* cursos */
 
+.boxcur {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(237, 237, 239);
+    padding: 0 10%;
+}
 
 .cursos {
     width: 100%;
     display: table;
     box-sizing: border-box;
-    padding: 3% 10%;
+    padding: 2% 5%;
     background-color: rgb(89, 88,89);
     color: whitesmoke;
     border: 0.5em solid rgb(42, 92, 166);
@@ -208,8 +230,8 @@ html, body {
 .footmain {
     width: 100%;
     display: table;
-    height: 3%;
-    background-color: rgb(237, 237, 239)
+    height: 10%;
+    background-color: rgb(237, 237, 239);
 }
 
 .idiomas {
