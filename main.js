@@ -1,3 +1,4 @@
+
 /*experiencia*/
 var button = document.getElementById("toggleex");
 var target = document.getElementById("targetex");
@@ -22,7 +23,7 @@ button.addEventListener("click", displayToggle, bool);
 /*educacion*/
 var buttonedu = document.getElementById("toggleedu");
 var targetedu = document.getElementById("targetedu");
-var bool = true;
+
 
 
 function displayToggleEdu() {
@@ -43,7 +44,7 @@ buttonedu.addEventListener("click", displayToggleEdu, bool);
 /*cursos*/
 var buttoncur = document.getElementById("togglecur");
 var targetecur = document.getElementById("targetecur");
-var bool = true;
+
 
 
 function displayToggleCur() {
@@ -62,7 +63,7 @@ function displayToggleCur() {
 
 buttoncur.addEventListener("click", displayToggleCur, bool);
 
-/*menu*/
+/*menu dispositivo movil*/
 var btn = document.getElementById("btn");
 var menu = document.getElementById("mininav");
 

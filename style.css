@@ -33,8 +33,12 @@ html, body {
 
 /* bar nav */
 
+.nav {
+    position: fixed;
+    width: 100%;
+}
 
-.nav ul {
+.navi {
     /*display: table;*/
     background-color: rgba(24, 24, 27, 0.56);
     overflow: hidden;
@@ -45,21 +49,21 @@ html, body {
     margin: 0;
     font-size: 1em;
     transition: max-height 0.5s;
-    position: fixed;
+
 
   }
-.nav ul li {
+.navi li {
     display:inline-block;
     padding: 1em;
 
 }
 
-.nav ul li a {
+.navi a {
     text-decoration: none;
     color: inherit;
 }
 
-.nav ul li:hover {
+.navi li:hover {
 	background-color: #399077;
 }
 
@@ -72,7 +76,7 @@ html, body {
     color: whitesmoke;
     background-color: rgba(24, 24, 27, 0.70);
     display: none;
-    position: fixed;
+
 
 
 }
@@ -386,6 +390,7 @@ transform: rotate(45deg);
 
     .showing {
         display: block;
+        position: fixed;
     }
 
 
