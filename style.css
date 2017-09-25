@@ -40,7 +40,7 @@ html, body {
 
 .navi {
     /*display: table;*/
-    background-color: rgba(24, 24, 27, 0.56);
+    background-color: rgba(24, 24, 27, 0.70);
     overflow: hidden;
     color: whitesmoke;
     padding: 0;
@@ -125,7 +125,7 @@ html, body {
 
 .selectorcontainer {
     width: 100%;
-    height: 27%;
+    height: 30%;
     display: table;
     background-color: rgb(237, 237, 239);
 }
@@ -139,7 +139,7 @@ html, body {
 
 .selectorex, .selectoredu, .selectorcur {
     width: 15%;
-    height: 80%;
+    height: 78%;
     box-sizing: border-box;
     display: inline-block;
     padding: 4% 0;
@@ -149,6 +149,10 @@ html, body {
     cursor: pointer;
 
 }
+/*.selectorex:hover, .selectoredu:hover, .selectorcur:hover {
+    background-color: rgba(24, 24, 27, 0.5);
+
+}*/
 
 .azul {
     background-color: rgb(42, 92, 166);
@@ -408,26 +412,31 @@ transform: rotate(45deg);
          display: block;
         }
 
-    .selectorex {
+    .selectorex,  .selectoredu, .selectorcur {
         width: 100%;
         padding: 0;
         height: 25%;
         margin: 1% 0;
 
     }
-    .selectoredu {
-        width: 100%;
+
+    .boxex, .boxedu, .boxcur {
+
         padding: 0;
-        height: 25%;
-        margin: 1% 0;
     }
 
-    .selectorcur {
+  /*  .experiencia {
+
         width: 100%;
-        padding: 0;
-        height: 25%;
-        margin: 1% 0;
-    }
+        box-sizing: border-box;
+        padding: 2% 5%;
+        background-color: rgb(89, 88,89);
+        color: whitesmoke;
+        transition: 0.5deg;
+        border: 0.5em solid rgb(42, 92, 166);
+        display: none;
+    }*/
+
 }
 
 @media screen and (min-width: 1440px) {

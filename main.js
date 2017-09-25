@@ -2,6 +2,7 @@
 /*experiencia*/
 var button = document.getElementById("toggleex");
 var target = document.getElementById("targetex");
+var navEx = document.getElementById("nav3");
 var bool = true;
 
 
@@ -10,7 +11,10 @@ function displayToggle() {
         target.setAttribute("class", "experiencia show")
         bool = false;
         button.setAttribute("class", "selectorex azul")
-
+        targetEdu.setAttribute("class", "hide")
+        targetCur.setAttribute("class", "hide")
+        buttonEdu.setAttribute("class", "selectoredu gris")
+        buttonCur.setAttribute("class", "selectoredu gris")
     } else {
         target.setAttribute("class", "hide")
         bool = true;
@@ -19,49 +23,60 @@ function displayToggle() {
 }
 
 button.addEventListener("click", displayToggle, bool);
+navEx.addEventListener("click", displayToggle, bool);
 
 /*educacion*/
-var buttonedu = document.getElementById("toggleedu");
-var targetedu = document.getElementById("targetedu");
-
+var buttonEdu = document.getElementById("toggleedu");
+var targetEdu = document.getElementById("targetedu");
+var navEdu = document.getElementById("nav4")
 
 
 function displayToggleEdu() {
     if (bool) {
-        targetedu.setAttribute("class", "educacion show")
+        targetEdu.setAttribute("class", "educacion show")
         bool = false;
-        buttonedu.setAttribute("class", "selectoredu azul")
+        buttonEdu.setAttribute("class", "selectoredu azul")
+        target.setAttribute("class", "hide")
+        targetCur.setAttribute("class", "hide")
+        button.setAttribute("class", "selectoredu gris")
+        buttonCur.setAttribute("class", "selectoredu gris")
 
     } else {
-        targetedu.setAttribute("class", "hide")
+        targetEdu.setAttribute("class", "hide")
         bool = true;
-        buttonedu.setAttribute("class", "selectoredu gris")
+        buttonEdu.setAttribute("class", "selectoredu gris")
     }
 }
 
-buttonedu.addEventListener("click", displayToggleEdu, bool);
+buttonEdu.addEventListener("click", displayToggleEdu, bool);
+navEdu.addEventListener("click", displayToggleEdu, bool);
 
 /*cursos*/
-var buttoncur = document.getElementById("togglecur");
-var targetecur = document.getElementById("targetecur");
-
+var buttonCur = document.getElementById("togglecur");
+var targetCur = document.getElementById("targetecur");
+var navCur = document.getElementById("nav5")
 
 
 function displayToggleCur() {
     if (bool) {
-        targetecur.setAttribute("class", "cursos show")
+        targetCur.setAttribute("class", "cursos show")
         bool = false;
-        buttoncur.setAttribute("class", "selectorcur azul")
+        buttonCur.setAttribute("class", "selectorcur azul")
+        target.setAttribute("class", "hide")
+        targetEdu.setAttribute("class", "hide")
+        button.setAttribute("class", "selectoredu gris")
+        buttonEdu.setAttribute("class", "selectoredu gris")
 
     } else {
-        targetecur.setAttribute("class", "hide")
+        targetCur.setAttribute("class", "hide")
         bool = true;
-        buttoncur.setAttribute("class", "selectorcur gris")
+        buttonCur.setAttribute("class", "selectorcur gris")
     }
 
 }
 
-buttoncur.addEventListener("click", displayToggleCur, bool);
+buttonCur.addEventListener("click", displayToggleCur, bool);
+navCur.addEventListener("click", displayToggleCur, bool);
 
 /*menu dispositivo movil*/
 var btn = document.getElementById("btn");
@@ -72,6 +87,7 @@ function displayMenu() {
     if (bool) {
         menu.setAttribute("class", "navi showing")
         bool = false;
+
     } else {
         menu.setAttribute("class", "hidding")
         bool = true;
