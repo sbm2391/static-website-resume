@@ -1,29 +1,29 @@
 
 /*experiencia*/
-var button = document.getElementById("toggleex");
-var target = document.getElementById("targetex");
+var buttonEx = document.getElementById("toggleex");
+var targetEx = document.getElementById("targetex");
 var navEx = document.getElementById("nav3");
 var bool = true;
 
 
-function displayToggle() {
+function displayToggleEx() {
     if (bool) {
-        target.setAttribute("class", "experiencia show")
+        targetEx.setAttribute("class", "experiencia show")
         bool = false;
-        button.setAttribute("class", "selectorex azul")
+        buttonEx.setAttribute("class", "selectorex azul")
         targetEdu.setAttribute("class", "hide")
         targetCur.setAttribute("class", "hide")
         buttonEdu.setAttribute("class", "selectoredu gris")
         buttonCur.setAttribute("class", "selectoredu gris")
     } else {
-        target.setAttribute("class", "hide")
+        targetEx.setAttribute("class", "hide")
         bool = true;
-        button.setAttribute("class", "selectorex gris")
+        buttonEx.setAttribute("class", "selectorex gris")
     }
 }
 
-button.addEventListener("click", displayToggle, bool);
-navEx.addEventListener("click", displayToggle, bool);
+buttonEx.addEventListener("click", displayToggleEx, bool);
+navEx.addEventListener("click", displayToggleEx, bool);
 
 /*educacion*/
 var buttonEdu = document.getElementById("toggleedu");
@@ -36,9 +36,9 @@ function displayToggleEdu() {
         targetEdu.setAttribute("class", "educacion show")
         bool = false;
         buttonEdu.setAttribute("class", "selectoredu azul")
-        target.setAttribute("class", "hide")
+        targetEx.setAttribute("class", "hide")
         targetCur.setAttribute("class", "hide")
-        button.setAttribute("class", "selectoredu gris")
+        buttonEx.setAttribute("class", "selectoredu gris")
         buttonCur.setAttribute("class", "selectoredu gris")
 
     } else {
@@ -62,9 +62,9 @@ function displayToggleCur() {
         targetCur.setAttribute("class", "cursos show")
         bool = false;
         buttonCur.setAttribute("class", "selectorcur azul")
-        target.setAttribute("class", "hide")
+        targetEx.setAttribute("class", "hide")
         targetEdu.setAttribute("class", "hide")
-        button.setAttribute("class", "selectoredu gris")
+        buttonEx.setAttribute("class", "selectoredu gris")
         buttonEdu.setAttribute("class", "selectoredu gris")
 
     } else {
